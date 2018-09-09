@@ -1,0 +1,74 @@
+
+/*Tablets 1024px-768px */
+
+@media screen and (max-width: 1024px) {
+	.container{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+/*Mobile 768px-0px */
+
+@media screen and (max-width: 760px) {
+	html{
+		font-size: 14px;
+	}
+	.menu{
+		display: block;
+	}
+	.nav{
+		display: none;
+	}
+	.skills__items{
+		flex-wrap: wrap;
+	} 
+	.skills__item{
+		padding-bottom: 10px;
+	}
+	.works__element{
+		flex-wrap: wrap;
+	}
+	.works__item{
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 822px) {
+	.meritsandcommunication{
+		margin-left: 0;
+		margin-top: 64px;
+	}
+}
+@media screen and (max-width: 455px){
+	html{
+		font-size: 13px;
+	}
+	.header__email{
+		display: none;
+	}
+	.merits__items{
+		flex-direction: column;
+	}
+	.merits__item{
+		justify-content: flex-start;
+		margin-bottom: 25px;
+	}
+	.Communication__paragraph{
+		display: none;
+	}
+	.communication__element{
+		width:100%;
+	}
+	.skills__digit{
+		min-width: 61px;
+	}
+	.skills__items{
+		flex-direction: column;
+	}
+
+}
+@media screen and (max-width: 302px) {
+	header{
+		flex-direction: column;
+	}
+}

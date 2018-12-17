@@ -1,0 +1,167 @@
+/* Планшеты Tablets 1024px-768px */
+
+@media screen and (max-width: 1200px) {
+     .container{
+        width:90%;
+        margin: 0 auto;
+    }
+    .nav>ul{
+    display: none;
+    }
+
+    .contacthamburger{
+        display: flex;
+        align-items: center;
+        width: 254px;
+        justify-content: space-between;
+    }
+    .footer__contact{
+        display: none;
+    }
+    .advantage__items{
+        justify-content: center;
+    }
+    .advantage__item{
+        margin-bottom: 15px;
+    }
+    .menu{
+        display: block;
+            left:69vw;
+            top: 8px;
+    }
+    .service__title>h1{
+        line-height: 2.3rem;
+    }
+    .contact{
+        margin-right: 24%;
+    }
+    html{
+        font-size: 14px;
+    }
+    .contact__container{
+        margin-top: 0;margin: 0 auto;
+        width:90%;
+    }
+}
+
+/* Мобильные Mobile 768px-0px */
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+    
+   .consultation__form>input{
+    padding-left: 50px;
+      }
+      .footer__privacy{
+        display: none;
+      }
+  }
+  @media screen and (max-width: 762px) {
+    .contact__container{
+        height: auto;
+    }
+    .realty__item{
+    flex-direction: column;
+    margin-top: 20px;
+   }
+   .realty__element p{
+    text-align: center;
+   }
+   #consultation{
+        padding-top: 8px;
+        padding-bottom: 25px;
+    }
+    .contact__p{
+    	padding-right: 0;
+    	padding-left: 0;
+    }
+    .found{
+    	flex-direction: column;
+    	height: 250px;
+    }
+    .partners__element{
+    	flex-direction: column;
+    	align-items: center;
+    }
+    .partners__item{
+    	margin-bottom: 20px;
+    	padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .contact{
+        display: none;
+    }
+    html{
+        font-size: 14.5px
+    }
+}
+@media screen and (max-width: 498px) {
+    .service__img>img{
+        display: none;
+    }
+    .review__item{
+         padding: 0;
+         padding-top: 131px;
+    }
+    .review__info{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .namefb{
+    flex-direction: column;
+    align-items: center;
+    }
+     .rewiew__p>p{
+        text-align: center;
+      }
+      .rewiew__username{
+        margin-left:22%;
+        margin-bottom: 15px;
+      }
+      .review__img{
+        position: absolute;
+        left:25%;
+        top: 0;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .service__img>img{
+        display: none;
+    }
+    .menu{
+    left:65vw;
+   }
+   .realty-img{
+    width: 70vw;
+   }
+}
+@media screen and (max-width: 400px) {
+    .menu{
+    left:50vw;
+   }
+   html{
+        font-size: 13px;
+    }
+    .review__img{
+        left:14%;
+    }
+    .slick-prev,
+    .slick-next{
+        display: block;
+    }
+}
+@media screen and (max-width: 333px) {
+    .review__img{
+        left:5%;
+    }
+   
+}
+
+
+
+

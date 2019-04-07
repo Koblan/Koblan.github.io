@@ -370,8 +370,8 @@ footer.border-top {
 
 @media (max-width: 767px) {
     .card-form{
-        width: 90vw;
-        padding: 2% 5%;
+        width: 90vw !important ;
+        padding: 2% 5% !important ;
     }
     .card-buy__content-text{
         display: none;

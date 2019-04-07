@@ -370,6 +370,28 @@ footer.border-top {
 }
 
 @media (max-width: 767px) {
+    .prev, .next {
+    top: 50% !important ;
+    left: 50% !important ;
+    cursor: pointer;
+}
+.prev{
+    left: 50% !important ;
+
+    transform: translateX(-40vw) translateY(-50%) ;
+}
+.next {
+    left: 50% !important ;
+    transform: translateX(35vw) translateY(-50%);
+}
+    .card-buy__img{
+    width: 85vw  !important ;
+}
+.card-buy__img img{
+    height: auto !important ;
+    width: 85vw !important ;
+}
+.card-buy_
     .card-form{
         width: 95vw !important ;
         padding: 2% 5% !important ;
@@ -473,6 +495,10 @@ height: 0;
 }
 
 @media (max-width: 470px) {
+    .next {
+    left: 50% !important ;
+    transform: translateX(29vw) translateY(-50%);
+}
     html{
     font-size: 13.5px;
 }

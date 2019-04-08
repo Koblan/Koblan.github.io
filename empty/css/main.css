@@ -372,6 +372,9 @@ footer.border-top {
 }
 
 @media (max-width: 767px) {
+    .card-form{
+        width: 95vw;
+    }
     .prev, .next {
     top: 50% !important ;
     left: 50% !important ;
@@ -393,7 +396,6 @@ footer.border-top {
     height: auto !important ;
     width: 85vw !important ;
 }
-.card-buy_
     .card-form{
         width: 95vw !important ;
         padding: 2% 5% !important ;
@@ -499,7 +501,7 @@ height: 0;
 @media (max-width: 470px) {
     .next {
     left: 50% !important ;
-    transform: translateX(29vw) translateY(-50%);
+    transform: translateX(32vw) translateY(-50%);
 }
     html{
     font-size: 13.5px;

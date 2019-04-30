@@ -1,74 +1,147 @@
-
-/*Tablets 1024px-768px */
-
-@media screen and (max-width: 1024px) {
-	.container{
-		width: 90%;
-		margin: 0 auto;
-	}
-	
+@media screen and (max-width: 1140px){
+	.container {
+       width:80%;
+       margin: 0 auto;
+   }
+}       
+@media screen and (max-width: 768px){
+	.container {
+       width:90%;
+       margin: 0 auto;
+   }
+   .slick-initialized .slick-slide{
+       display: flex;
+   }
+   .header__logo{
+       margin-right: 15px;
+   }
+   .header__intro{
+    height: 80px;
+    padding-bottom: 26px;
 }
-/*Mobile 768px-0px */
+.products__slider{
+    display: block;
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
+}
 
-@media screen and (max-width: 760px) {
-	html{
-		font-size: 14px;
-	}
-	.menu{
-		display: block;
-	}
-	.nav{
-		display: none;
-	}
-	.skills__items{
-		flex-wrap: wrap;
-	} 
-	.skills__item{
-		padding-bottom: 10px;
-	}
-	.works__element{
-		flex-wrap: wrap;
-	}
-	.works__item{
-		margin-bottom: 20px;
-	}
+.product-prev , .product-next{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #008feb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -moz-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+    box-shadow: 0px 0px 18px 0px rgba(0, 118, 195, 0.58);
 }
-@media screen and (max-width: 822px) {
-	.meritsandcommunication{
-		margin-left: 0;
-		margin-top: 64px;
-	}
-}
-@media screen and (max-width: 455px){
-	html{
-		font-size: 13px;
-	}
-	.header__email{
-		display: none;
-	}
-	.merits__items{
-		flex-direction: column;
-	}
-	.merits__item{
-		justify-content: flex-start;
-		margin-bottom: 25px;
-	}
-	.Communication__paragraph{
-		display: none;
-	}
-	.communication__element{
-		width:100%;
-	}
-	.skills__digit{
-		min-width: 61px;
-	}
-	.skills__items{
-		flex-direction: column;
-	}
+.header__products {
+    width: 290px;
+    margin: 0 auto;
 
 }
-@media screen and (max-width: 302px) {
-	header{
-		flex-direction: column;
-	}
+.product-prev{
+    left: 0px;
+    top: 50%;
+    transform: translateX(-50%)translateY(-50%);
 }
+.product-next{
+    left: 100%;
+    top: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+.header__logo{
+    width: 93px;
+    height: 31px;
+}
+.header__product{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product__size{
+    margin-top: 15px;
+}
+.product__warranty{
+    margin-bottom: 20px;
+}
+.header__products  .slick-list{
+   border-radius: 24px;
+}
+.product__buy{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.header__products .slick-dots li button::before{
+   content: "S";
+   height:29px;
+   width: 45px;
+   font-size: 16px;
+   font-weight: 800;
+
+   color: #f99f0b;
+   opacity: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.header__products .slick-dots li:nth-child(2) button:before{
+   content: "M";
+}
+.header__products .slick-dots li:nth-child(3) button:before{
+   content: "L";
+}
+.header__products .slick-dots .slick-active button::before{
+
+   color: #fff;
+   
+}
+.header__products .slick-dots .slick-active button{
+
+       background:url(../img/плашки/размер-1.png);
+   
+}
+.header__products .slick-dots li button{
+       background:url(../img/плашки/размер-2.png);
+    font-size: 15px;
+    padding: 10px;
+    height:29px;
+    width: 45px;
+}
+.slick-dots li{
+   height:29px;
+   width: 45px;
+
+}
+#first{
+    background: url(../img/фон-mobile.png) no-repeat;
+    background-size: cover;
+}
+#first__header{
+    margin-bottom: 130px;
+}
+.first-items{
+    flex-wrap: wrap;
+}
+.header__products .slick-dots{
+    width: 133px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    bottom: -45px;
+}
+.first-items{
+    flex-wrap: wrap;
+}
+
+}       

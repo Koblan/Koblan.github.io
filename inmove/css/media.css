@@ -130,6 +130,9 @@
 #first__header{
     margin-bottom: 130px;
 }
+.first-items{
+    flex-wrap: wrap;
+}
 .header__products .slick-dots{
     width: 133px;
     display: flex;
@@ -137,6 +140,8 @@
     margin: 0 60px;
     bottom: -45px;
 }
-
+.first-items{
+    flex-wrap: wrap;
+}
 
 }       

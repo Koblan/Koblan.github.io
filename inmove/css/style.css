@@ -1,0 +1,283 @@
+html{
+	font-size: 15px;
+}
+@font-face{
+	font-family:FuturaNewBook;  
+	src: url('../fonts/FuturaNewBook.otf');  
+	font-weight: 300;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Bold.ttf') format('truetype');  
+	font-weight:700;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Book.ttf') format('truetype');  
+	font-weight: 300;
+}
+@font-face{
+	font-family:FuturaPTCond;  
+	src: url('../fonts/FuturaPTCond-Bold.ttf') format('truetype');  
+	font-weight: 700;
+}
+@font-face{
+	font-family:FuturaPTCond;  
+	src: url('../fonts/FuturaPTCond-Book.ttf') format('truetype');  
+	font-weight: 300;
+}
+@font-face{
+	font-family:FuturaPTCond;  
+	src: url('../fonts/FuturaPTCond-ExtraBold.ttf') format('truetype');  
+	font-weight:800;
+}
+@font-face{
+	font-family:FuturaPTCond;  
+	src: url('../fonts/FuturaPTCond-Medium.ttf') format('truetype');  
+	font-weight:500;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Demi.ttf') format('truetype');  
+	font-weight:600;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-ExtraBold.ttf') format('truetype');  
+	font-weight:800;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Heavy.ttf') format('truetype');  
+	font-weight:900;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Light.ttf') format('truetype');  
+	font-weight:200;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Light.ttf') format('truetype');  
+	font-weight:200;
+}
+@font-face{
+	font-family:FuturaPT;  
+	src: url('../fonts/FuturaPT-Medium.ttf') format('truetype');  
+	font-weight:500;
+}
+body{
+	font-family:FuturaPT,FuturaPTCond,sans-serif;
+	
+}
+*{
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+#first{
+	background: url(../img/backgraund-first.png) no-repeat;
+}
+.header__intro{
+	display: flex;
+	height: 123px;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+	align-items: flex-end;
+
+}
+.header__logo{
+	height: 68px;
+	margin-bottom: 4px;
+	margin-right: 26px;
+}
+.header__title{
+	font-size: 14px;
+	font-weight: 500;
+	color: #222222;
+}
+.header__title-green{
+	font-size: 18px;
+	font-weight: 500;
+	color: #41ac32;
+}
+.product__img{
+	height: 160px;
+	width: 143px;
+}
+.header__products{
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.header__product{
+   box-sizing: border-box;
+   width: 360px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+  border-radius: 24px;
+  box-shadow: 0px 7px 65px 0px rgba(156, 182, 204, 0.39);
+  background: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-bottom: #cbdcea solid 10px;
+}
+
+.product__img{
+	margin-bottom: 20px;
+}
+.product__title{
+	font-size: 20px;
+	font-weight: 800;
+	color: #222222;
+	width: 200px;
+	text-transform: uppercase;
+}
+.product__size{
+	display: flex;
+	width: 263px;
+	
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.product__size-sm , .product__size-level{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+	background: url(../img/плашки/плашка-размер.png);
+	height: 34px;
+	width: 130px;
+}
+.product__size-sm-img{
+	margin-right: 9px;
+
+}
+.product__desc{
+color: #222222;
+	font-size: 16px;
+	font-weight: 500;
+}
+.product__warranty{
+	position: relative;
+	width: 170px;
+	height: 34px;
+	display: flex;
+	padding-left: 55px;
+	font-size: 18px;
+	font-weight: 900;
+	background: url(../img/плашки/плашка-гарнтия.png);
+	background-size: contain;
+	margin-top: 20px;
+	margin-bottom: 34px;
+	line-height: 30px;
+}
+.product_warranty-img{
+	position: absolute;
+	left:7px;
+	top: -8px;
+}
+.product__price{
+	font-size: 30px;
+	font-weight: 900;
+}
+.product__buy{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 266px;
+	background-color: rgb(68, 149, 11);
+  box-shadow: 0px 7px 21px 0px rgba(88, 185, 20, 0.53);
+   background-image: -moz-linear-gradient( 90deg, rgb(91,194,18) 0%, rgb(107,231,20) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(91,194,18) 0%, rgb(107,231,20) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(91,194,18) 0%, rgb(107,231,20) 100%);
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-top: 16px;
+	border-bottom: solid #44950b 4px;
+	margin-bottom: 21px;
+}
+.product__more{
+	font-size: 14px;
+	padding-bottom: 2px;
+	border-bottom: #cbdcea solid 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #007dcd;
+	text-transform: uppercase;
+
+	font-weight: 500;
+
+}
+.first-items{
+	display: flex;
+	justify-content: space-between;
+}
+.first-item{
+	padding-top: 10px;
+	padding-left: 100px;
+	position: relative;
+	width: 212px;
+	height: 100px;
+}
+.first-item:last-child{
+	margin-top: 10px;
+
+}
+.first-item__img{
+	position: absolute;
+	top: -25px;
+	left: -45px;
+}
+.first-item__text{
+	width: 250px;
+}
+.first-item__text-bolder{
+	font-weight: 600;
+	display: inline-block;
+}
+.first-item__text{
+	padding-top: 5px;
+   font-size: 16px;
+   font-weight: 300;
+}
+.product__buy:hover{
+  background-image: -moz-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,99,163) 0%, rgb(0,154,253) 100%);
+
+  background-color: rgb(0, 80, 131);
+  box-shadow: 0px 7px 21px 0px rgba(0, 137, 226, 0.53);
+  border-bottom: solid #005083 4px;
+}
+.product__more:hover{
+	color: #5dc612;
+	border-bottom: #5dc713 solid 1px;
+}
+.product-prev , .product-next{
+	display: none;
+}
+
+
+
+
+
+
+

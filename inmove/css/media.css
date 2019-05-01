@@ -1,28 +1,54 @@
 @media screen and (max-width: 1140px){
 	.container {
-       width:80%;
-       margin: 0 auto;
-   }
-}       
-@media screen and (max-width: 768px){
-	.container {
-       width:90%;
-       margin: 0 auto;
-   }
-   .slick-initialized .slick-slide{
-       display: flex;
-   }
-   .header__logo{
-       margin-right: 15px;
-   }
-   .header__intro{
+     width:95%;
+     margin: 0 auto;
+ }
+
+ .header__logo{
+     margin-right: 15px;
+ }
+ .header__intro{
     height: 80px;
     padding-bottom: 26px;
 }
-.products__slider{
+
+.header__product{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.product__size{
+    margin-top: 15px;
+}
+.product__warranty{
+    margin-bottom: 20px;
+}
+.header__products  .slick-list{
+ border-radius: 24px;
+}
+.product__buy{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.header__product{
+    width: 310px;
+}
+
+}       
+@media screen and (max-width: 768px){
+    body{
+        background: inherit;
+    }
+	.container {
+     width:90%;
+     margin: 0 auto;
+ }
+ .slick-initialized .slick-slide{
+     display: flex;
+ }
+ .products__slider{
     display: block;
     position: relative;
-    width: 290px;
+    width: 460px;
     margin: 0 auto;
 }
 
@@ -44,7 +70,7 @@
     box-shadow: 0px 0px 18px 0px rgba(0, 118, 195, 0.58);
 }
 .header__products {
-    width: 290px;
+    width: 460px;
     margin: 0 auto;
 
 }
@@ -62,83 +88,204 @@
     width: 93px;
     height: 31px;
 }
-.header__product{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.product__size{
-    margin-top: 15px;
-}
-.product__warranty{
-    margin-bottom: 20px;
-}
-.header__products  .slick-list{
-   border-radius: 24px;
-}
-.product__buy{
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
 .header__products .slick-dots li button::before{
-   content: "S";
-   height:29px;
-   width: 45px;
-   font-size: 16px;
-   font-weight: 800;
+ content: "S";
+ height:29px;
+ width: 45px;
+ font-size: 16px;
+ font-weight: 800;
 
-   color: #f99f0b;
-   opacity: 1;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+ color: #f99f0b;
+ opacity: 1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 
 }
 
 .header__products .slick-dots li:nth-child(2) button:before{
-   content: "M";
+ content: "M";
 }
 .header__products .slick-dots li:nth-child(3) button:before{
-   content: "L";
+ content: "L";
 }
 .header__products .slick-dots .slick-active button::before{
 
-   color: #fff;
-   
+ color: #fff;
+
 }
 .header__products .slick-dots .slick-active button{
 
-       background:url(../img/плашки/размер-1.png);
-   
-}
-.header__products .slick-dots li button{
-       background:url(../img/плашки/размер-2.png);
-    font-size: 15px;
-    padding: 10px;
-    height:29px;
-    width: 45px;
-}
-.slick-dots li{
-   height:29px;
-   width: 45px;
+ background:url(../img/плашки/размер-1.png);
 
 }
-#first{
+.header__products .slick-dots li button{
+ background:url(../img/плашки/размер-2.png);
+ font-size: 15px;
+ padding: 10px;
+ height:29px;
+ width: 45px;
+}
+.slick-dots li{
+ height:29px;
+ width: 45px;
+
+}
+#first__header {
     background: url(../img/фон-mobile.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 178%;
 }
 #first__header{
-    margin-bottom: 130px;
+    padding-bottom: 100px;
 }
 .header__products .slick-dots{
     width: 133px;
     display: flex;
     justify-content: space-between;
-    margin: 0 60px;
+    margin: 0 145px;
     bottom: -45px;
 }
 .first-items{
     flex-wrap: wrap;
 }
+.batut-acc__title>h1{
+    font-size: 24px;
+    font-weight: 800;
+}
+.batut-acc__title>h6{
+    font-size: 24px;
+    font-weight: 200;
+}
+.batut-acc__items{
+    padding-top: 355px;
+}
+.batut-acc__items-img>img{
+    width: 480px;
+}
+.batut-acc__items-img{
+    top: 83px;
+
+    left: 55%;
+}
 
 }       
+@media screen and (max-width: 560px){
+    .batut-acc__items{
+        padding-top: 355px;
+
+        width: 290px;
+
+        margin: 0 auto;
+    }
+    .first-items{
+        width: 290px;
+        margin: 0 auto;
+    }
+    .header__products {
+        width: 290px;
+    }
+    .products__slider{
+        width: 290px;
+    }
+    .header__products .slick-dots {
+        margin: 0 60px;
+    }
+    #first__header {
+        background: url(../img/фон-mobile.png) no-repeat;
+        background-size: 100% 168%;
+    }
+    .batut-acc__item-text{
+        display: none;
+        margin-top: 15px;
+        margin-left: 22px;
+    }
+    .batut-acc__items-left , .batut-acc__items-right{
+        height: auto;
+    }
+    .batut-acc__item-title{
+        cursor: pointer;
+        margin-top: 36px;
+        height: 40px;
+        background-color: #0b81ce;
+
+    background: url(../img/плашки/плашка.png) no-repeat;
+    background-size: cover;
+    }
+    .batut-acc__items-left .batut-acc__item-title:first-child{
+        margin-top: 0px;
+    }
+    .batut-acc__item-title-h{
+        font-size: 16px;
+        margin: 0;
+        color: #fff;
+        margin-left: 70px;
+        width: 200px;
+        line-height: 40px;
+    }
+    .batut-acc__items-left .batut-acc__item-title-h{
+        line-height: 17px;
+    }
+    .batut-acc__items-right .batut-acc__item-title-h{
+        line-height: 40px;
+    }
+    .batut-acc__items-img{
+        top: 130px;
+        left: 60%;
+    }
+    .batut-acc__item-title-img{
+        left: -55px;
+        top: -45px;
+    }
+    .button{
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+    .button:before , .button:after {
+       content: "";
+       position: absolute;
+       background-color: white;
+       transition: transform 0.25s ease-out;
+   }
+   .button:before{
+       top: 0;
+       left: 50%;
+       width: 4px;
+       height: 100%;
+       margin-left: -2px;
+   }
+   .button:after{
+       top: 50%;
+       left: 0;
+       width: 100%;
+       height: 4px;
+       margin-top: -2px;
+   }
+   .button:hover{ 
+    cursor: pointer;
+}
+.button-active:before{ 
+   transform: rotate(90deg); 
+}
+.button-active:after{ 
+   transform: rotate(180deg); 
+}
+.batut-acc__item-title-button{
+    position: absolute;
+
+    top: 0px;
+
+    left: 100%;
+
+    transform: translateX(-100%);
+
+    width: 60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    height: 40px;
+    align-items: center;
+}
+}

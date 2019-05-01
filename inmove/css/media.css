@@ -37,6 +37,7 @@
 @media screen and (max-width: 768px){
     body{
         background: inherit;
+
     }
 	.container {
      width:90%;
@@ -189,6 +190,9 @@
     }
     .header__products .slick-dots {
         margin: 0 60px;
+    }
+    #first{
+        overflow-x: hidden;
     }
     #first__header {
         background: url(../img/фон-mobile.png) no-repeat;

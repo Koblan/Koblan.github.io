@@ -133,7 +133,7 @@
 }
 #first__header {
     background: url(../img/фон-mobile.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 178%;
 }
 #first__header{
     padding-bottom: 100px;
@@ -192,7 +192,7 @@
     }
     #first__header {
         background: url(../img/фон-mobile.png) no-repeat;
-        background-size: 100% 168%;
+        background-size: cover;
     }
     .batut-acc__item-text{
         display: none;

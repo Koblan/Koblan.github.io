@@ -1,0 +1,11 @@
+.koblan{
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	line-height: 77px;
+	margin-bottom: 0;
+}

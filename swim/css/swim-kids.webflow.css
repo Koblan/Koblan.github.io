@@ -2659,7 +2659,6 @@ a {
 		display: flex !important;
 	}
 	.phone-item.active , .phone-item2.active{
-		margin-right: 0;
 		width: 163px !important ;
 	}
 	.phone-num{

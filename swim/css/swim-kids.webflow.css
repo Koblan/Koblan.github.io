@@ -2604,6 +2604,12 @@ a {
 		background-color: rgba(4, 43, 138, 0.7);
 		width: 100%;
 	}
+	.nav-menu-f{
+		background-color: initial;
+	}
+	.phone-item.active{
+		margin-right: 6px !important ;
+	}
 	.phone-item.active .phone-flag , .phone-item2.active .phone-flag{
 		height: 22px;
 

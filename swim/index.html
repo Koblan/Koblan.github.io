@@ -214,7 +214,7 @@ input[type="checkbox"]:checked {
 .phone-flag {
   width: 30px;
   height: 30px;
-  background: url('https://dl.dropbox.com/s/eahbusaoeqdjn3z/bel.svg') top center no-repeat;
+  background: top center no-repeat;
   background-size: auto;
   background-size: 100%;
   cursor: pointer;
@@ -994,12 +994,12 @@ input[type="checkbox"]:checked {
                                   <script src="js/webflow.js" type="text/javascript"></script>
                                   <script src="mail.js" type="text/javascript"></script>
                                   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-                                  <script src="https://dl.dropbox.com/s/w4mjbv1w6xeax86/select2.full.js"></script>
-                                  <script src="https://dl.dropbox.com/s/sh6yzg26wqg3w1u/select2-searchInputPlaceholder.js"></script>
+                                  <script src="js/select2.full.js"></script>
+                                  <script src="js/select2-searchInputPlaceholder.js"></script>
                                   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCLF5Ls0vg5bPA9uUyCdAaHUirxwbcNi0"></script>
-                                  <script type="text/javascript" src="https://dl.dropbox.com/s/m76eo1tprh8onan/remodal.js"></script>
-                                  <script type="text/javascript" src="https://dl.dropbox.com/s/o9vmwkf5ad13zjn/maskedinput.js"></script>
-                                  <script type="text/javascript" src="https://dl.dropbox.com/s/4a9kvzo7kqbiq0z/jquery.maskedinput.js"></script>
+                                  <script type="text/javascript" src="js/remodal.js"></script>
+                                  <script type="text/javascript" src="js/maskedinput.js"></script>
+                                  <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
                                   <script>
                                     $('#school').select2({
                                       width: '100%',
@@ -1078,10 +1078,12 @@ input[type="checkbox"]:checked {
 
                                     switch (userLang) {
                                       case "ru":
+                                      alert("ru");
                                       $('.phone-item.rus').trigger('click');
                                       $('.phone-item2.rus').trigger('click');
                                       break;
-                                      case "kz":
+                                      case "kz":;
+                                      alert("kz")
                                       $('.phone-item.kz').trigger('click');
                                       $('.phone-item2.kz').trigger('click');
                                       break;

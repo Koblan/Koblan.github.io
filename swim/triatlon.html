@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Sat Jul 20 2019 08:51:58 GMT+0000 (UTC)  -->
+<html data-wf-page="5b98870a9f15d1f5730ec272" data-wf-site="5b661c3e0512e95447b36fe9">
+<head>
+  <meta charset="utf-8">
+  <title>Школа плавания «Триатлон»</title>
+  <meta content="Школа плавания «Триатлон»" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/swim-kids.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/android-chrome-512x512.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
+  <link href="https://dl.dropbox.com/s/jwjutve9vbmqzsz/remodal.css" rel="stylesheet" type="text/css">
+  <link href="https://dl.dropbox.com/s/aoxk4o5id2ve0y6/remodal-default-theme.css" rel="stylesheet" type="text/css">
+  <style>
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+    color: #fff;
+    padding-left: 15px;
+  }
+  .select2-container--default .select2-selection--single {
+    height: 42px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+  }
+  .select2-container--default .select2-selection--single {
+    background-color: #042b8a;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+  .select2-dropdown {
+    background-color: #042b8a;
+    border: 2px solid #fff;
+    color: #fff;
+}
+  .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #2cb1f4;
+    color: #fff;
+  }
+  .select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 30;
+    color: #042b8a;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color:  #fff transparent transparent transparent;
+  }
+  .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #fff transparent;
+  }
+  /* Для модальных окон */
+  .select2-container--default .select2-selection--single.modal-select .select2-selection__arrow b {
+    border-color: #595008 transparent transparent transparent;
+  }
+  .select2-container--default.select2-container--open .select2-selection--single.modal-select .select2-selection__arrow b {
+  border-color: transparent transparent #595008 transparent;
+  }
+  .select2-container .select2-selection--single.modal-select .select2-selection__rendered {
+    line-height: 59px;
+    color: #595008;
+    padding-left: 0px;
+  }
+  .select2-container--default .select2-selection--single.modal-select  .select2-selection__arrow {
+    height: 59px;
+  }
+  .remodal .select2-container {
+    margin-bottom: 25px;
+  }
+  .select2-container--default .select2-selection--single.modal-select  {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+margin-bottom: 0;
+padding-left: 0px;
+border-style: none none solid;
+border-bottom-width: 1px;
+border-bottom-color: #595008;
+-webkit-transition: all 300ms ease;
+transition: all 300ms ease;
+color: #042b8a;
+font-size: 16px;
+border-radius: 0;
+text-align: left;
+}
+  .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #2cb1f4;
+    color: #fff;
+  }
+  .select2-dropdown.modal-dd {
+    z-index: 10001;
+    border: 1px solid #2cb1f4;
+    background-color: #fff;
+    color: #2cb1f4;
+  }
+  .select2-dropdown.modal-dd .select2-search__field {
+    height: 60px;
+    border: 1px solid #2cb1f4;
+    background-color: #fff;
+    color: #2cb1f4;
+}
+  @media (max-width: 767px) {
+    .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 28px;
+    padding-left: 8px;
+  }
+  .select2-container--default .select2-selection--single {
+    height: 32px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 28px;
+  }
+  }
+  @keyframes remodal-opening-keyframes {
+    from {
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+@keyframes remodal-closing-keyframes {
+    from {
+        transform: scale(1);
+        opacity: 1
+    }
+    to {
+        transform: scale(.95);
+        opacity: 0
+    }
+}
+@keyframes remodal-overlay-opening-keyframes {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes remodal-overlay-closing-keyframes {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+</style>
+  <style>
+input[type="checkbox"] {
+    width: 28px;
+    height: 28px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: unset;
+    border: 2px solid #c1c1c1;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    outline: none
+}
+input[type="checkbox"]:checked {
+    border: none;
+    background-image: url("data:image/png;base64,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");
+    background-position-y: -600px;
+    background-position-x: -10px
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+  .select2-dropdown {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.city-select.blue ~ .select2-container--default .select2-selection--single {
+    background-color: #042b8a;
+}
+.select2-dropdown.blue {
+   background-color: #042b8a;
+}
+@media(max-width:1152px) {
+.navbar-inner-menu {
+display:none;
+}
+}
+@media(max-width:991px) {
+.navbar-inner-menu {
+display:block;
+}
+.w-nav-overlay {
+overflow:visible;
+}
+</style>
+</head>
+<body>
+  <header class="fixed-navbar">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <div class="navbar-container w-container"><a href="#" class="brand w-nav-brand"><img src="images/logo.svg" width="150" alt=""></a>
+        <div class="menu-button blue w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+        <div class="city-select-form w-form">
+          <form id="email-form" name="email-form" data-name="Email Form"><select data-name="Город" class="city-select blue w-select"><option value="Казань">Казань</option><option value="Москва">Москва</option><option value="Самара">Самара</option></select></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <nav role="navigation" class="nav-menu white w-clearfix w-nav-menu" data-ix="nav-open"><a href="https://my.swim-kids.com/" target="_blank" class="btn alignleft var2 fixed w-button">Личный кабинет</a><a href="#" data-remodal-target="modal" class="btn yellow nav-yellow-btn alignleft w-button">Бесплатное занятие</a><a href="tel:8(800)700-71-31" class="navbar-tel-link blue">8 (800) 700-71-31</a>
+          <div class="navbar-inner-menu"><a href="#" class="navbar-link blue">Водное поло </a><a href="#" class="navbar-link blue">Плавание</a></div>
+        </nav><a href="tel:8(800)700-71-31" class="navbar-tel-link nav-mobile blue">8 (800) 700-71-31</a></div>
+    </div>
+  </header>
+  <div class="hero-section-2" data-ix="navbar-int">
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar main ver2 w-nav">
+      <div class="navbar-container w-container"><a href="#" class="brand w-nav-brand"><img src="images/logo-w.svg" width="150" alt=""></a>
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+        <div class="city-select-form w-form">
+          <form id="email-form" name="email-form" data-name="Email Form"><select data-name="Город" class="city-select w-select"><option value="Казань">Казань</option><option value="Москва">Москва</option><option value="Самара">Самара</option></select></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+        <nav role="navigation" class="nav-menu var-2 w-clearfix w-nav-menu" data-ix="nav-open">
+          <div class="overlay"></div><a href="https://my.swim-kids.com/" target="_blank" class="btn alignleft var2 w-button">Личный кабинет</a><a href="#" data-remodal-target="modal" class="btn yellow nav-yellow-btn alignleft var-2 w-button">Бесплатное занятие</a><a href="tel:8(800)700-71-31" class="navbar-tel-link ver2">8 (800) 700-71-31</a>
+          <div class="navbar-inner-menu"><a href="#" class="navbar-link">Водное поло </a><a href="#" class="navbar-link">Плавание</a></div>
+        </nav><a href="tel:8(800)700-71-31" class="navbar-tel-link nav-mobile">8 (800) 700-71-31</a></div>
+    </div>
+    <div data-w-id="748015f7-cb3a-88a4-a056-72a09842730f" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="container w-container">
+      <h3 class="main-h3"><strong>Крупнейшая в СНГ сеть школ </strong></h3>
+      <h1 class="main-2-h1"><strong class="bold-text-2">Триатлон для детей</strong></h1>
+      <p class="paragraph main white">Обучение и регулярные тренировки для детей 7-12 лет с профессиональными тренерами <br>по специально разработанной программе</p>
+    </div><a href="#triatlon" class="scroll-next-btn w-inline-block"><img src="images/swimm-bottom.svg" width="39" data-w-id="f5c2edba-cdee-5181-05f5-6c694e014ebd" alt=""></a></div>
+  <div id="triatlon" class="advantages-section swimming var2">
+    <div class="container animation w-container">
+      <h2 class="section-h2 advantages big"><strong>Что такое триатлон?</strong></h2>
+      <p class="section-introtext">Триатлон  вид спорта, представляющий собой мультиспортивную гонку, состоящую из непрерывного последовательного прохождения её участниками трёх этапов:</p>
+      <div class="advantages-row var2">
+        <div class="advantages-col"><img src="images/swim.jpg" width="150" alt="" class="advantages-icon">
+          <h3 class="step-h3 advantages var2"><strong>Плавание</strong></h3>
+        </div>
+        <div class="advantages-col"><img src="images/bicycle.jpg" width="150" alt="" class="advantages-icon">
+          <h3 class="step-h3 advantages var2"><strong>Велогонка</strong></h3>
+        </div>
+        <div class="advantages-col"><img src="images/run.jpg" width="150" alt="" class="advantages-icon">
+          <h3 class="step-h3 advantages var2"><strong>Бег</strong></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="polo" class="polo-section var2">
+    <div class="left-align container animation w-container">
+      <div class="left-column">
+        <h2 class="section-h2 advantages small"><strong class="bold-text">Триатлон дает возможность гармонично развиваться, учиться достигать поставленных целей и получить здоровое тело</strong></h2>
+        <div class="polo-text var2">Сочетание динамических нагрузок и восстановительных процессов пропорционально развивает <strong>все</strong> физические качества ребенка</div><a href="#" class="btn big-btn w-button">Записаться на бесплатное занятие</a></div>
+    </div>
+  </div>
+  <div id="advantages" class="advantages-section expert pb250">
+    <div class="container animation w-container">
+      <h2 class="section-h2 advantages big expert">Наши эксперты и консультанты</h2>
+      <div class="advantages-row">
+        <div class="advantages-col treners two-treners"><img src="images/experts_04.jpg" width="300" alt="">
+          <h3 class="step-h3 expert blue"><strong>Виктория Шубина</strong><br></h3>
+          <p class="step-p expert blue">Элит-тренер по триатлону, презентер российских и международных конвенций, 5-кратный IRONMAN, 19-кратный IRONMAN 70.3, ЧМ IRONMAN KONA 2016<br><br>Для нашей сети Виктория со своей командой разработала и развивает программу обучения и повышения квалификации для тренеров по направлению «Триатлон для детей с 8 лет»<br></p>
+        </div>
+        <div class="advantages-col treners two-treners"><img src="images/03.jpg" width="300" alt="">
+          <h3 class="step-h3 expert blue">Роман Попович</h3>
+          <p class="step-p expert blue">Детский невролог с десятилетним опытом работы, к.м.н. по педиатрии и нервным болезням. Совместно со специалистами нашей школы он разработал действенную методику развития ребенка. <br><br>Немаловажный факт: у Романа у самого несколько детей, поэтому здоровье малышей для него на первом месте<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-w-id="5d42386b-c3d5-3121-2267-e335cb3a9561" class="hov-trening ht-h2">
+    <div class="ht-decor-wrapper bottom">
+      <div data-w-id="186d5fee-d11a-e4b5-b4a5-aa6a8e8402f9" class="ht-bottom-decor ht-top-decor"></div>
+    </div>
+    <div class="ht-decor-wrapper">
+      <div data-w-id="8a60fc7c-67e7-e477-18a0-4a16189adcb4" class="ht-top-decor"></div>
+    </div>
+    <div class="container animation w-container">
+      <h2 class="section-h2 padding-bottom-small">Как проходят тренировки?</h2>
+      <p class="ht-p">Методики школы разработаны специально для маленьких детей с использованием опыта ведущих спортсменов, педагогов и врачей. Мы учли влияние наших занятий на физическое и эмоциональное состояние детей, получили рекомендации специалистов в области детской неврологии и психологии. Важным требованием всех занятий является работа в малых группах: каждый тренер работает с группой, состоящей максимум из 8 детей. Особое внимание мы уделяем инвентарю и качеству бассейнов, в которых проходят занятия.</p>
+    </div>
+  </div>
+  <div class="command-section pt-240">
+    <div class="container step animation w-container">
+      <h2 class="section-h2 advantages big expert"><strong>Организуем соревнования для детей!</strong></h2>
+      <div class="flex-row">
+        <div class="flex-col-4"><a href="#" class="command-block ver2 w-inline-block w-lightbox"><script type="application/json" class="w-json">{
+  "items": [
+    {
+      "type": "image",
+      "_id": "5b98936f5a55673fb917102c",
+      "fileName": "tild6137-6362-4930-b364-383063623633__depositphotos_122114.jpg",
+      "origFileName": "tild6137-6362-4930-b364-383063623633__depositphotos_122114.jpg",
+      "width": 1360,
+      "height": 2000,
+      "fileSize": 1697930,
+      "url": "images/tild6137-6362-4930-b364-383063623633__depositphotos_122114.jpg"
+    }
+  ],
+  "group": "command"
+}</script></a></div>
+        <div class="flex-col-4"><a href="#" class="command-block _2 ver2 w-inline-block w-lightbox"><script type="application/json" class="w-json">{
+  "items": [
+    {
+      "type": "image",
+      "_id": "5b9893955a55675fec171031",
+      "fileName": "tild3235-6362-4632-b530-333038333239__z_depositphotos_1231.jpg",
+      "origFileName": "tild3235-6362-4632-b530-333038333239__z_depositphotos_1231.jpg",
+      "width": 1680,
+      "height": 1119,
+      "fileSize": 343871,
+      "url": "images/tild3235-6362-4632-b530-333038333239__z_depositphotos_1231.jpg"
+    }
+  ],
+  "group": "command"
+}</script></a></div>
+        <div class="flex-col-4"><a href="#" class="command-block _3 ver2 w-inline-block w-lightbox"><script type="application/json" class="w-json">{
+  "items": [
+    {
+      "type": "image",
+      "_id": "5b9893a9c7cadc7d7a702b29",
+      "fileName": "tild3537-3634-4939-b033-396138613633__depositphotos_514279.jpg",
+      "origFileName": "tild3537-3634-4939-b033-396138613633__depositphotos_514279.jpg",
+      "width": 1680,
+      "height": 1121,
+      "fileSize": 419457,
+      "url": "images/tild3537-3634-4939-b033-396138613633__depositphotos_514279.jpg"
+    }
+  ],
+  "group": "command"
+}</script></a></div>
+      </div>
+      <div class="blue-circle _2"></div>
+      <div class="blue-circle"></div>
+    </div>
+  </div>
+  <div id="polo" class="polo-section var2 sbor">
+    <div class="left-align container animation w-container">
+      <div class="left-column">
+        <h2 class="section-h2 advantages small"><strong class="bold-text">Проводим тренировочные сборы для наших спортсменов и их родителей</strong></h2>
+        <div class="polo-text var2">С лучшими тренерами, в самых красивых уголках мира</div>
+      </div>
+    </div>
+  </div>
+  <div class="treners-section ver2">
+    <div class="container animation w-container">
+      <h2 class="section-h2 treners">Тренеры города Москва</h2>
+      <p class="section-introtext treners">Только тренеры, прошедшие обучение с нашими экспертами,<br>получают возможность вести занятия по триатлону</p>
+      <div class="treners-wrapper">
+        <div class="treners-col">
+          <div class="treners-block">
+            <div class="treners-photo"></div>
+            <h3 class="treners-h3">Стерехов Александр Сергеевич</h3>
+            <div class="treners-rate"><img src="images/Star.svg" width="25" alt="">
+              <div class="rate-number">/ 10</div>
+            </div>
+            <div class="rate-num">0 оценок</div><a href="#" class="btn blue-btn treners-btn w-button">Подробнее</a></div>
+        </div>
+        <div class="treners-col">
+          <div class="treners-block">
+            <div class="treners-photo"></div>
+            <h3 class="treners-h3">Стерехов Александр Сергеевич</h3>
+            <div class="treners-rate"><img src="images/Star.svg" width="25" alt="">
+              <div class="rate-number">/ 10</div>
+            </div>
+            <div class="rate-num">0 оценок</div><a href="#" class="btn blue-btn treners-btn w-button">Подробнее</a></div>
+        </div>
+      </div><a href="#" class="btn white-btn w-button">Все тренеры города Москва</a></div>
+  </div>
+  <div data-w-id="6d829e29-bce7-4b58-40c4-4aed319db5ad" class="lk-section">
+    <div class="lk-decor bottom">
+      <div data-w-id="5e3735fc-2c87-0ec6-4ff5-562605f7a2a8" class="lk-top"></div>
+    </div>
+    <div class="lk-decor">
+      <div data-w-id="62cb6597-2201-b5e2-0eed-6df976ff808b" class="lk-top"></div>
+    </div>
+    <div class="container animation w-container">
+      <div class="lk-wrapper">
+        <div class="lk-col left">
+          <h2 class="lk-h2">Личный кабинет для родителей учеников</h2>
+          <p class="lk-p">Родители юных пловцов могут следить за успехами своих детей онлайн, проверять расписание, общаться с тренерами, участвовать и смотреть вебинары с детскими специалистами в области психологии, педагогики и детского здоровья, а также продлевать абонемент и оформлять страховку на ребенка прямо в приложении.</p>
+        </div>
+        <div class="lk-col"><img src="images/ipad_iphone_mockup.png" srcset="images/ipad_iphone_mockup-p-500.png 500w, images/ipad_iphone_mockup-p-800.png 800w, images/ipad_iphone_mockup.png 1365w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 90vw, (max-width: 991px) 92vw, 55vw" alt="" class="image"></div>
+      </div>
+    </div>
+  </div>
+  <div class="ts-section pt-200">
+    <h1 class="section-h2 big">Родители о школе</h1>
+    <div data-animation="slide" data-nav-spacing="8" data-duration="500" data-infinite="1" class="ts-slider w-slider">
+      <div class="w-slider-mask">
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Сыну 4г., пока посетили три занятия, ему нравится, спрашивает когда следующее...для нас это результат, тк он очень скромный в общении) Спасибо тренеру, что смогли заинтересовать! Подкупает внимательное отношение к каждому ребенку</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Юлия Александровна Заливина</div>
+            <div class="ts-city">Омск</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Нам очень нравятся занятия! А особенно домашние задания,интересный подход,выполняем дома всей семьёй! Спасибо за позитив</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Светлана Олеговна Мещанинец</div>
+            <div class="ts-city">Омск</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Необходимо отметить высокий профессионализм нашего тренера (как работает с детьми, методика проведения занятий, дисциплина, обратная отдача маленьких спортсменов). Спасибо большое.</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Алексей Кузькин</div>
+            <div class="ts-city">Чита</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Нам понадобилось почти три месяца, чтобы пройти адаптацию. Ребёнок плакал, не хотел идти, боялся воды. Сейчас совсем другая история. Умеем нырять, плавать на спине, собираемся и приходим с огромным удовольствием! Большое спасибо нашим тренерам!</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Кюнчэя Реворьевна Петрова</div>
+            <div class="ts-city">Якутск</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Мы уже второй год ходим на секцию плавания &quot;Кроль&quot; и очень довольны! Плавание отлично укрепляет здоровье и, конечно, силы, кроме того, уметь плавать - никогда лишним не бывает 😉 Нам очень повезло : у нас супер-тренеры, дети их обожают и стараются в конце занятия, после основной тренировки, обязательно повиснуть на них гроздьями😅</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Вероника Чупрова</div>
+            <div class="ts-city">Якутск</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Занимается сын, это его первые занятия по плаванию. Назначение невролога.Очень долго решались пойти куда-либо.Благодаря флампу нашли Кроль.Понравилась их методика, игровая групповая работа с детьми и то, что в воде одновременно два тренера.Сын в восторге от занятий.</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Комаров</div>
+            <div class="ts-city">Новосибирск</div>
+          </div>
+        </div>
+        <div class="ts-slide w-slide">
+          <div class="container w-container" data-ix="slider-interaction">
+            <p class="ts-p">Замечательная школа плавания с удобным графиком для родителей и детей. Чуткие,опытные тренеры с индивидуальным подходом к каждому ребенку.</p><img src="images/like.svg" width="60" alt="">
+            <div class="ts-name">Левон Манасян</div>
+            <div class="ts-city">Новосибирск</div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrow w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
+      </div>
+      <div class="slider-arrow w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
+      </div>
+      <div class="slide-nav w-slider-nav w-slider-nav-invert w-round"></div>
+    </div>
+  </div>
+  <div class="test-section ver2">
+    <div class="container animation w-container">
+      <div class="test-section-subtitle">Сегодня триатлон — вид спорта, которым увлекаются многие <br>успешные бизнесмены и политики</div>
+      <h2 class="section-h2 big white test-h2">Запишитесь на пробное занятие <br>бесплатно!</h2><a href="#" data-remodal-target="modal" class="btn big-btn w-button">Записаться</a></div>
+  </div>
+  <div class="map-section">
+    <div class="container map animation w-container">
+      <h2 class="section-h2 white big map">Мы постоянно расширяем географию присутствия школ</h2><img src="images/Crawl_Map.svg" alt="">
+      <p class="map-p">Мы активно расширяем сеть присутствия, поэтому в ближайшее время на нашей карте появятся новые города</p>
+    </div>
+  </div>
+  <div class="contact-section">
+    <div class="container animation w-container">
+      <h2 class="section-h2 big contact-h2">Откройте школу плавания «Кроль» <br>в своём городе</h2>
+      <p class="contact-p">Простой и прибыльный бизнес с быстрым возвратом инвестиций</p>
+      <div class="contact-form w-form">
+        <form id="wf-form-" name="wf-form-" data-name="Открыть школу"><input type="text" data-name="Имя" placeholder="Ваше имя" maxlength="256" class="input w-input"><input type="text" maxlength="256" data-name="Телефон" placeholder="Ваш телефон" required="" class="input tel w-input"><input type="text" class="input w-input" maxlength="256" name="email" data-name="email" placeholder="Ваш email" id="email" required=""><input type="text" maxlength="256" data-name="Город" placeholder="Ваш город" class="input w-input"><input type="submit" value="Оставить заявку" data-wait="Подождите..." class="btn blue-btn big-btn w-button"></form>
+        <div class="success-message w-form-done"><img src="images/like.svg" width="150" alt="">
+          <div class="success-p">Спасибо! Ваша заявка принята! <br>Наш менеджер свяжется с Вами в ближайшее время.</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Возникла ошибка:( Свяжитесь с нами по телефонам указанным на сайте.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-section">
+    <div class="footer-decor"></div>
+    <div class="navbar-container footer-cont w-container"><a href="#" class="footer-logo w-inline-block"><img src="images/logo-w.svg" width="150" alt=""></a>
+      <div class="footer-links"><a href="https://my.swim-kids.com/" target="_blank" class="footer-link">Личный кабинет</a><a href="https://www.beboss.ru/franchise/2906" target="_blank" class="footer-link">Франшиза Кроль на БИБОСС</a></div>
+      <div class="navbar-social-block footer-social"><a href="https://www.facebook.com/swimkidscom/" target="_blank" class="social-link w-inline-block"><img src="images/facebook.svg" alt=""></a><a href="https://vk.com/swimkidscom" target="_blank" class="social-link w-inline-block"><img src="images/vkont.svg" alt=""></a><a href="https://www.youtube.com/channel/UCHoy-tecYYOzMDK1KQIiHiQ?view_as=subscriber" target="_blank" class="social-link w-inline-block"><img src="images/youtube.svg" alt=""></a><a href="https://www.instagram.com/swimkidscom/" target="_blank" class="social-link w-inline-block"><img src="images/inst.svg" alt=""></a></div>
+    </div>
+  </footer>
+  <div data-remodal-id="modal" class="modal remodal"><a href="#" data-remodal-action="close" class="modal-close w-inline-block"><img src="images/popup-close_1popup-close.png" alt=""></a>
+    <div class="modal-form w-form">
+      <form id="wf-form-" name="wf-form-" data-name="Пробное занятие" class="form">
+        <div class="form-left-col">
+          <h2 class="section-h2 modal-h2">Запишитесь на бесплатное занятие</h2>
+          <p class="step-p">Оставьте заявку, и мы перезвоним</p><input type="text" data-name="Имя" placeholder="Ваше имя" maxlength="256" class="input w-input"><input type="text" data-name="Имя" maxlength="256" placeholder="Имя ребенка" class="input w-input"><input type="text" maxlength="256" data-name="Телефон" placeholder="Ваш телефон" required="" class="input tel w-input"><select id="school" data-name="Школа" class="input w-select"><option value=""></option><option value="Выберите школу">Выберите школу</option></select><select id="city-callback" data-name="Город" class="input w-select"><option value=""></option><option value="Москва">Москва</option><option value="Самара">Самара</option><option value="Уфа">Уфа</option></select><label class="w-checkbox"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input"><span for="checkbox" class="field-label w-form-label">Я принимаю <a data-remodal-target="pers-data" href="#">соглашение об обработке персональных данных</a> *</span></label>
+          <div class="captcha"></div><input type="submit" value="Оставить заявку" data-wait="Подождите..." class="btn blue-btn big-btn w-button"></div>
+        <div class="modal-map-col">
+          <div class="map-2 w-widget w-widget-map"></div>
+        </div>
+      </form>
+      <div class="success-message w-form-done"><img src="images/like.svg" width="150" alt="">
+        <div class="success-p modal-success">Спасибо! Ваша заявка принята! <br>Наш менеджер свяжется с Вами в ближайшее время.</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Возникла ошибка:( Свяжитесь с нами по телефонам указанным на сайте.</div>
+      </div>
+    </div>
+  </div>
+  <div data-remodal-id="pers-data" class="modal remodal pers-data"><a href="#" data-remodal-action="close" class="modal-close w-inline-block"><img src="images/popup-close_1popup-close.png" alt=""></a>
+    <div class="w-richtext">
+      <h2>Соглашение об обработке персональных данных</h2>
+      <p>Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте «Детская школа плавания Кроль» (далее – Сайт) путем заполнения полей онлайн-заявки (регистрации), Пользователь:</p>
+      <ul>
+        <li>Подтверждает, что все указанные им данные принадлежат лично ему,</li>
+        <li>Подтверждает и признает, что им внимательно в полном объеме прочитано Соглашение и условия обработки его персональных данных, указываемых им в полях онлайн заявки (регистрации), текст соглашения и условия обработки персональных данных ему понятны;</li>
+        <li>Дает согласие на обработку Сайтом предоставляемых в составе информации персональных данных в целях заключения между ним и Сайтом настоящего Соглашения, а также его последующего исполнения;</li>
+        <li>Выражает согласие с условиями обработки персональных данных без оговорок и ограничений.</li>
+      </ul>
+      <p>Пользователь дает свое согласие на обработку его персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ &quot;О персональных данных&quot;, и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своем интересе.</p>
+      <p>Согласие Пользователя на обработку персональных данных является конкретным, информированным и сознательным.</p>
+      <p>Настоящее согласие Пользователя признается исполненным в простой письменной форме, на обработку следующих персональных данных: фамилии, имени, отчества; даты рождения; места пребывания (город, область); номерах телефонов; адресах электронной почты (E-mail).</p>
+      <p>Пользователь, предоставляет Сайту право осуществлять следующие действия (операции) с персональными данными: сбор и накопление; хранение в течение установленных нормативными документами сроков хранения отчетности, но не менее трех лет, с момента даты прекращения пользования услуг Пользователем; уточнение (обновление, изменение); использование; уничтожение; обезличивание; передача по требованию суда, в т.ч., третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.</p>
+      <p>Указанное согласие действует бессрочно с момента предоставления данных и может быть отозвано Вами путем подачи заявления администрации сайта с указанием данных, определенных ст. 14 Закона «О персональных данных».</p>
+      <p>Отзыв согласия на обработку персональных данных может быть осуществлен путем направления Пользователем соответствующего распоряжения в простой письменной форме на адрес электронной почты (E-mail) info@swim-kids.com</p>
+      <p>Сайт не несет ответственности за использование (как правомерное, так и неправомерное) третьими лицами Информации, размещенной Пользователем на Сайте, включая её воспроизведение и распространение, осуществленные всеми возможными способами.</p>
+      <p>Сайт имеет право вносить изменения в настоящее Соглашение. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Соглашения вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Соглашения.</p>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script src="https://dl.dropbox.com/s/w4mjbv1w6xeax86/select2.full.js"></script>
+  <script src="https://dl.dropbox.com/s/sh6yzg26wqg3w1u/select2-searchInputPlaceholder.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCLF5Ls0vg5bPA9uUyCdAaHUirxwbcNi0"></script>
+  <script type="text/javascript" src="https://dl.dropbox.com/s/m76eo1tprh8onan/remodal.js"></script>
+  <script type="text/javascript" src="https://dl.dropbox.com/s/o9vmwkf5ad13zjn/maskedinput.js"></script>
+  <script type="text/javascript" src="https://dl.dropbox.com/s/4a9kvzo7kqbiq0z/jquery.maskedinput.js"></script>
+  <script>
+  $('#school').select2({
+  width: '100%',
+        placeholder: "Выберите школу",
+    	containerCssClass: 'modal-select',
+   	    dropdownCssClass: 'modal-dd',
+        searchInputPlaceholder: "Поиск",
+        language: {
+            noResults: function () {
+                return "Ничего не найдено";
+            }
+        }
+    });
+  $('#city-callback').select2({
+  width: '100%',
+        placeholder: "Выберите город",
+    	containerCssClass: 'modal-select',
+     	dropdownCssClass: 'modal-dd',
+        searchInputPlaceholder: "Поиск",
+        language: {
+            noResults: function () {
+                return "Ничего не найдено";
+            }
+        }
+    });
+  $('.city-select').select2({
+  width: 'resolve',
+        placeholder: "Ваш город",
+        searchInputPlaceholder: "Поиск",
+        language: {
+            noResults: function () {
+                return "Ничего не найдено";
+            }
+        }
+    });
+     $(".tel").inputmask("+7 (999) 999-99-99");
+                $(document).on('closing', '.pers-data', function (e) {
+                    var modal = $('[data-remodal-id=modal]').remodal();
+                    modal.open();
+                });
+                $(document).on('opened', '.popup', function () {
+                    Public.rerenderMaps();
+                    $("[name=CityId]").change();
+                 });
+    </script>
+  <script>
+$('.city-select.blue').select2({
+  width: 'resolve',
+        placeholder: "Ваш город",
+        searchInputPlaceholder: "Поиск",
+        dropdownCssClass: "blue",
+        language: {
+            noResults: function () {
+                return "Ничего не найдено";
+            }
+        }
+    });
+    </script>
+</body>
+</html>

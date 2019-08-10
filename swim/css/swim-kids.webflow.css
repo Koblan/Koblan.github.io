@@ -2758,3 +2758,6 @@ a {
 		height: 115px !important;
 	}
 }
+.w-nav-overlay .w--nav-menu-open{
+	top: 4px !important;
+}

@@ -1061,40 +1061,27 @@ input[type="checkbox"]:checked {
                                         case 'RU':  
                                         $('.phone-item.rus').trigger('click');
                                         $('.phone-item2.rus').trigger('click');
+                                      $(".phone-item.rus").addClass('active');
+                                      $(".phone-item2.rus").addClass('active');
                                         break;
                                         case 'KZ':  
                                         $('.phone-item.kz').trigger('click');
                                         $('.phone-item2.kz').trigger('click');
+                                      $(".phone-item.kz").addClass('active');
+                                      $(".phone-item2.kz").addClass('active');
                                         break;
                                         case 'BY':  
                                         $('.phone-item.blr').trigger('click');
                                         $('.phone-item2.blr').trigger('click');
+                                      $(".phone-item.blr").addClass('active');
+                                      $(".phone-item2.blr").addClass('active');
                                         break;
                                         default:
                                         $('.phone-item.rus').trigger('click');
                                         $('.phone-item2.rus').trigger('click');
+                                      $(".phone-item.rus").addClass('active');
+                                      $(".phone-item2.rus").addClass('active');
                                       }});
-                                    var userLang = navigator.language || navigator.userLanguage; 
-
-                                    switch (userLang) {
-                                      case "ru":
-                                      alert("ru");
-                                      $('.phone-item.rus').trigger('click');
-                                      $('.phone-item2.rus').trigger('click');
-                                      break;
-                                      case "kz":;
-                                      alert("kz")
-                                      $('.phone-item.kz').trigger('click');
-                                      $('.phone-item2.kz').trigger('click');
-                                      break;
-                                      case "by":
-                                      $('.phone-item.blr').trigger('click');
-                                      $('.phone-item2.blr').trigger('click');
-                                      break;
-                                      default:
-                                      $('.phone-item.rus').trigger('click');
-                                      $('.phone-item2.rus').trigger('click');
-                                    }
 
 
                                     </script>

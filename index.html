@@ -1,252 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Myportfolio</title>
+	<title>WLD</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono%7CRoboto:100,300,400,900&display=swap" rel="stylesheet"> 
+	
 </head>
 <body>
-	<section id="first">
-		<div class="container ">
-			<header>
-				<div class="header__logo">
-					<img src="img/header-logo.png" alt="logo">
+	<header id="header">
+		<nav class="header__nav">
+			<div class="header__logo">
+				<div class="header__logo-text">
+					WhiteLabel
 				</div>
-				<nav class="nav">
-					<ul>
-						<li> <a href="#aboutme">about me</a></li>
-						<li> <a href="#skills">skills</a></li>
-						<li> <a href="#works">works</a></li>
-					</ul> 
-				</nav>
-				<div class="header__email">
-					info@myname.com
-					<hr noshade=>
+				<div class="header__logo-text2">
+					Developers
 				</div>
-				<div class="menu">
-					<input type="checkbox" id="check-menu">
-					<label for="check-menu">MENU</label>
-					<div class="burger-line first"></div>
-					<div class="burger-line second"></div>
-					<div class="burger-line third"></div>
-					<div class="burger-line fourth"></div>
-					<nav class="main-menu">
-						<a href="#aboutme">aboutme</a>
-						<a href="#skills" class="menu-a">skills</a>
-						<a href="#works" class="menu-a">works</a>
-					</nav>
-				</div>
-				
-			</header>
-			<div class="header__title">
-				<h1>
-					the case, where I live
-				</h1>
-				<h2>
-					layout&frontend
-				</h2>
 			</div>
-			<div class="header__down">
-				<a href="#aboutme">
-					<div class="header__arrow">
-						
-						<img src="img/header-arrow.png" alt="arrow">
-						
-					</div>
-				</a>
+			<div class="hamburger">
+				<span class="hamburger-btn">
+
+				</span>
+			</div>
+			<div class="header__menu-mobile">
+				<ul class="header__menu-mobile-list">
+					<li><a href="#">Главная</a></li>
+					<li> <a href="#">Поддержка</a> </li>
+					<li> <a href="#">Сборка</a></li>
+					<li> <a href="#">Правка</a></li>
+					<li>--</li>
+					<li> <a href="#">О нас</a></li>
+					<li> <a href="#">Условия</a></li>
+					<li> <a href="#">Цены</a></li>
+					<li> <a href="#">Работы</a></li>
+				</ul>
+			</div>
+			<ul class="header__menu">
+				<li class="header__menu-service">
+					<a href="#">УСЛУГИ</a>
+					<img class="header__menu-service-down" src="img/down.svg" alt="down">
+					<div class="header__submenu">
+						<ul>
+							<li> <a href="#">Поддержка</a> </li>
+							<li> <a href="#">Сборка</a></li>
+							<li> <a href="#">Правка</a></li>
+							<li> <a href="#">Условия</a></li>
+						</ul>
+					</div> 
+				</li>
+				<li> <a href="#">О НАС</a></li>
+				<li> <a href="#">РАБОТЫ</a></li>
+				<li> <a href="#">БЛОГ</a></li>
+				<li>
+					<button class="header__btn">
+						ЗАКАЗАТЬ
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="first" class="first">
+		<div class="container">
+			<div class="first-inner">
+				<div class="first__text">
+					<h1 class="first__title">
+						У вас есть заказы, <br> но нет разработчиков? <br> Наш код, ваш бренд.
+					</h1>
+					<h1 class="first__title first__title-adaptive">
+						Наш код, ваш бренд. <br> Продолжение правильных слов. <br> И ещё правильные слова
+					</h1>
+					<h2 class="first__subtitle">
+						Мы работем со всеми CMS, решаем задачи по поддержке, внесению исправлений и доработке интернет-ресурсов. Отправьте сейчас заявку на расчет стоимости и получите ответ в течении часа.
+					</h2>
+					<h2 class="first__subtitle first__subtitle-adaptive">
+						Решить конкретную задачу или полностью разработать и реализовать сложный проект «под ключ» — над любым проектом мы работаем точно, последовательно и пунктуально.
+					</h2>
+					<button class="first__btn">
+						ЗАЯВКА
+					</button>
+				</div>
+				<div class="first__note">
+					<img class="first__note-img" src="img/note.svg" alt="note">
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<div class="cms">
+		<div class="container">
+			<div class="cms-items">
+				<img src="img/wp.svg" alt="wp" class="cms-item">
+				<img src="img/umi-cms-.svg" alt="umi-cms" class="cms-item">
+				<img src="img/prestashop.svg" alt="prestashop" class="cms-item">
+				<img src="img/opencart.svg" alt="opencart" class="cms-item">
+				<img src="img/modx.svg" alt="modx" class="cms-item">
+				<img src="img/netcat.svg" alt="netcat" class="cms-item">
+				<img src="img/typo3.svg" alt="typo3" class="cms-item">
+				<img src="img/joomla.svg" alt="joomla" class="cms-item">
+				<img src="img/druplicon.svg" alt="druplicon" class="cms-item">
+				<img src="img/magento.svg" alt="magento" class="cms-item">
+				<img src="img/bitrix.svg" alt="bitrix" class="cms-item">
+				<img src="img/joomla(2).svg" alt="joomla" class="cms-item">
+				<img src="img/modx(1).svg" alt="modx" class="cms-item">
+			</div>
+		</div>
+	</div>
+	<section id="services">
+		<div class="container">
+			<h2 class="services__title h2">УСЛУГИ</h2>
+			<div class="services__items">
+				<div class="services__item">
+					<img src="img/clocks.svg" alt="" class="services__item-img">
+					<h3 class="services__item-title">Поддержка</h3>
+					<p class="services__item-p">
+						Обновление содержимого, отслеживание оплаты хостинга и доменных имён, внесение SEO-правок, проверка на вирусы и прочее.
+					</p>
+					<span class="services__item-link">&lt;заявка></span>
+				</div>
+				<div class="services__item">
+					<img src="img/gears.svg" alt="" class="services__item-img">
+					<h3 class="services__item-title">Сборка</h3>
+					<p class="services__item-p">
+						Создание сайта по вашему готовому дизайну. Мы напишем за вас ТЗ, спроектируем, сделаем прототип и реализуем для вас проект.
+					</p>
+					<span class="services__item-link">&lt;заявка></span>
+				</div>
+				<div class="services__item">
+					<img src="img/code.svg" alt="" class="services__item-img">
+					<h3 class="services__item-title">Правка</h3>
+					<p class="services__item-p">
+						Решить конкретную задачу или полностью разработать и реализовать сложный проект «под ключ» — над любым проектом мы работаем точно.
+					</p>
+					<span class="services__item-link">&lt;заявка></span>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section id="aboutme">
-		<div class="container ">
-			<div class="aboutme__title">
-				<h2>
-					about me
-				</h2>
-			</div>
-			<div class="aboutme__info d">
-				<div class="aboutme__background">
-					<div class="background__title">
-						<span>
-							background
-						</span>
-					</div>
-					<div class="background__paragraph">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.<br><br>
-							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui. <br><br>
-							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quiis aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in.
-
-						</p>
-					</div>
-				</div>
-				<div class="meritsandcommunication">
-					<div class="merits">
-						<div class="merits__title">
-							<span>
-								merits
-							</span>
-						</div>
-						<div class="merits__items d-flex">
-							<div class="merits__item">
-								<div class="merits__digit">
-									75
-								</div>
-								<div class="merits__item-title">
-									REALISED <br> PROJECTS
-								</div>
-							</div>
-							<div class="merits__item">
-								<div class="merits__digit">
-									154
-								</div>
-								<div class="merits__item-title">
-									POSITIVE <br> COMMENTS
-								</div>
-							</div>
-							<div class="merits__item">
-								<div class="merits__digit">
-									8
-								</div>
-								<div class="merits__item-title">
-									YEARS <br> EXPERIENCE
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="communication">
-						<div class="Communication__title">
-							<span>
-								Communication
-							</span>
-						</div>
-						<div class="communication__element d-flex">
-							<div class="communication__linsk d-flex">
-								<a href="https://vk.com/id337252079"target="_blank">vk.com/id337252079 <hr class="hr1"></a>
-								<a href="#">fb.com/12343 <hr class="hr2"></a>
-								<a href="#">info@sitename.ru <hr class="hr3"></a>
-							</div>
-							<div class="communication__icon d-flex ">
-								<div class="communication__icon-element"><i class="far fa-user icon"></i></div>
-								
-								<div class="Communication__paragraph d-flex">
-									Feel free,to write
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="skills">
-	<div class="container">
-		<div class="skills__title">
-			<h2>
-				skills
+	<section id="order">
+		<div class="container">
+			<h2 class="order__title h2">
+				ПОРЯДОК СОТРУДНИЧЕСТВА
 			</h2>
+			<div class="order-inner">
+				<div class="slider">
+					<img src="img/left.svg" alt="left" id="prev" class="slider-left">
+					<div id="slides">
+						<img src="img/slide1.svg" alt="slide1" class="slide showing">
+						<img src="img/slide2.svg" alt="slide2" class="slide">
+						<img src="img/slide3.svg" alt="slide3" class="slide">
+						<img src="img/slide4.svg" alt="slide4" class="slide">
+					</div>
+					<img src="img/right.svg" alt="right" id="next" class="slider-right">
+				</div>
+				<div class="order-text">
+					<p class="order-text-p">
+						Работы начинаются с формирования заказчиком технического задания с описанием необходимых работ, а так же сроков их исполнения. Исключением являются работы по поддержке в рамках фиксированного тарифного плана.
+						
+					</p>
+					<span class="order-text-link">
+						Важно ознакомиться с Условиями сотрудничества.
+					</span>
+				</div>
+			</div>
+			
 		</div>
-		<div class="skills__items d-flex">
-			<div class="skills__item">
-				<div class="skills__digit">
-					98%
-				</div>
-				<div class="skills__skill">
-					<h3>
-						PHOTOSHOP
-					</h3>
-				</div>
-			</div>
-			<div class="skills__item">
-				<div class="skills__digit">
-					99%
-				</div>
-				<div class="skills__skill">
-					<h3>
-						HTML
-					</h3>
-				</div>
-			</div>
-			<div class="skills__item">
-				<div class="skills__digit">
-					100%
-				</div>
-				<div class="skills__skill">
-					<h3>
-						CSS
-					</h3>
-				</div>
-			</div>
-			<div class="skills__item">
-				<div class="skills__digit">
-					0%
-				</div>
-				<div class="skills__skill">
-					<h3>
-						LAZINESS
-					</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="works">
-	<div class="container">
-		<div class="works__title">
-			<h2>
-				works
+	</section>
+	<section id="statis">
+		<div class="container">
+			<h2 class="static__title h2">
+				НАЧНИТЕ РАБОТАТЬ С НАМИ СЕГОДНЯ
 			</h2>
+			<div class="static__items">
+				<div class="static__item">
+					<div class="static__item-digit">11+</div>
+					<span class="static__item-text">
+						лет разработки
+					</span>
+				</div>
+				<div class="static__item">
+					<div class="static__item-digit">30+</div>
+					<span class="static__item-text">
+						осчастливленных клиентов
+					</span>
+				</div>
+				<div class="static__item">
+					<div class="static__item-digit">200+</div>
+					<span class="static__item-text">
+						реализованных проектов
+					</span>
+				</div>
+				<div class="static__item">
+					<div class="static__item-digit">>90/90</div>
+					<span class="static__item-text">
+						PageSpeed наших проектов
+					</span>
+				</div>
+			</div>
+			
 		</div>
-		<div class="works__element d-flex">
-			<div class="works__item">
-				<div class="works__item-title">
-					<p>
-						Newprovidence
-					</p>
-					<a href="Newprovidence/index.html">
-						look <hr noshade>
-					</a>
-				</div>
+	</section>
+			<div class="static-btn-inner">
+				<button class="static-btn">ОТПРАВИТЬ ЗАДАНИЕ</button>
 			</div>
-			<div class="works__item ">
-				<div class="works__item-title">
-					<p>
-						WORK NAME
-					</p>
-					<a href="Compass/index.html">
-						look  <hr noshade>
-					</a>
-				</div>
-			</div>
-			<div class="works__item ">
-				<div class="works__item-title">
-					<p>
-						WORK NAME
-					</p>
-					<a href="#">
-						look <hr noshade>
-					</a>
-				</div>
+	<div class="visa">
+		<div class="container">
+			<div class="visa-inner">
+				<img src="img/rosneft.svg" alt="rosneft" class="visa__img">
+				<img src="img/stg.svg" alt="stg" class="visa__img">
+				<img src="img/uruk.svg" alt="uruk" class="visa__img">
+				<img src="img/bic.svg" alt="bic" class="visa__img">
+				<img src="img/moscow.svg" alt="moscow" class="visa__img">
+				<img src="img/visa.svg" alt="visa" class="visa__img">
+				<img src="img/si.svg" alt="si" class="visa__img">
+				<img src="img/logo-header-gray.svg" alt="logo" class="visa__img">
+				<img src="img/header-gray2.svg" alt="logo2" class="visa__img">
+				<img src="img/header-gray3.svg" alt="logo3" class="visa__img">
 			</div>
 		</div>
 	</div>
-</section>
-<footer>
-	<div class="container">
-		<div class="footer_p">
-			<p>
-				2018-2099 / FACE THE FUTURE
-			</p>
+	<footer id="footer">
+		<div class="header__nav footer_nav">
+			<div class="footer__copyright">
+				<img src="img/copy-logo.svg" alt="copyright-logo" class="footer__copyright-logo">
+				<span class="footer__copyright-text">
+					Политика обработки ПД
+				</span>
+			</div>
+			<div class="footer__icons">
+				<a href="#"><div class="footer__icons-mail"></div></a>
+				<a href="#"><div class="footer__icons-twit"></div></a>
+				<a href="#"><div class="footer__icons-inst"></div></a>
+				<a href="#"><div class="footer__icons-tel"></div></a>
+				<a href="#"><div class="footer__icons-what"></div></a>
+			</div>
 		</div>
-	</div>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-<script src="js/main.js"></script>
+		
+	</footer>
+	
+	<script src="js/script.js"></script>
 </body>
 </html>

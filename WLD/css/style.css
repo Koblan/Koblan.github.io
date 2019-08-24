@@ -686,7 +686,7 @@
 	padding-top: 33px;
 	padding-bottom: 12px;
 }
-#support{
+#support , #about{
 	background: #E5E5E5;
 }
 .support-intro__title{
@@ -767,4 +767,28 @@
 }
 .accardion-img{
 	display: none;
+}
+#about-first{
+	background: #fff;
+}
+.support-intro-inner-a:first-child{
+	padding-bottom: 48px;
+}
+.about__subtitle{
+	padding-bottom: 10px;
+}
+.support-intro-inner-a{
+	padding-bottom:0;
+}
+.support-intro__title-a{
+	font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #373737;
+padding-top: 25px;
+}
+.support-intro__title-a:first-child{
+	padding-top: 35px;
 }

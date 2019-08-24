@@ -80,7 +80,7 @@
 		z-index: 1;
 		display: block;
 		position: absolute;
-		width: 100vw;
+		width: 100%;
 		background: #373737;
 		top: -300px;
 		left: 0;
@@ -152,10 +152,10 @@
 	.first_items{
 		display: none;
 	}
-	#support{
+	#support , #about{
 		background: #fff;
 	}
-	.intro-inner{
+	.support-intro-inner{
 		display: none;
 	}
 	.first h1{
@@ -259,6 +259,15 @@
 		text-align: center;
 		padding-top: 20px;
 		margin: 0 auto;
+	}
+	.modal{
+		max-width: 400px;
+		width: 95%;
+	}
+	.modal__form input , .modal__form textarea{
+		max-width: 320px;
+		width: 85%;
+
 	}
 
 }

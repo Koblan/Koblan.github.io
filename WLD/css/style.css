@@ -11,10 +11,6 @@
 	background: #373737;
 	height: 60px;
 }
-body{
-	width: 100vw;
-	overflow: hidden;
-}
 .container{
 	width: 1101px;
 	margin: 0 auto;

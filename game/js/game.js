@@ -92,7 +92,7 @@ function draw() {
  yPos += grav;
 
  ctx.fillStyle = "#fff";
- ctx.font = "24px Verdana";
+ ctx.font = "40px Verdana";
  ctx.fillText("Насвай: " + score, 10, cvs.height - 20);
 
  requestAnimationFrame(draw);

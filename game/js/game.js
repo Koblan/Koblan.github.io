@@ -91,7 +91,7 @@ function draw() {
 
  yPos += grav;
 
- ctx.fillStyle = "#000";
+ ctx.fillStyle = "#fff";
  ctx.font = "24px Verdana";
  ctx.fillText("Насвай: " + score, 10, cvs.height - 20);
 

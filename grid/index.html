@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="first">
+        <div class="first__grid">
+            <div class="first__grid-img">
+                <div class="one-red"></div>
+                <div class="yellow"></div>
+                <div class="red"></div>
+                <div class="one-green"></div>
+                <div class="two-green"></div>
+            </div>
+            <h1 class="first__grid-title">
+                CSS
+                <div class="first__grid-title-span">
+                    <a href="https://caniuse.com/#feat=css-grid"> Grid</a>
+                   
+                </div>
+
+            </h1>
+            <div class="first__grid-sometext">
+                Гриды гридут!
+            </div>
+        </div>
+    </div>
+    <section id="second">
+        <h1 class="title">Как задать свойство grid для родителя?</h1>
+        <pre>.container {
+                display: <span style="color: #f55442; background: rgba(0,0,0,.1); border-radius: 10px; padding: 5px;">grid;</span>
+            }
+        </pre>
+        <ul>
+            <li>
+                    CSS Grid скоро станет неотъемлемой частью набора инструментов любого фронт-энд разработчика. И если вы один из них, то вам придется учить CSS Grid — который практически определенно станет неосопоримым умением для любой позиции во фронтэнд разработке.
+
+            </li>
+            <li>
+                    С этим мощным функционалом и интуитивно понятным синтаксисом, шаблоны на grid будут несомненно менять то, на чем создается веб.
+            </li>
+        </ul>
+        <img src="https://miro.medium.com/max/600/1*lcpsBuz0gZVmvoSYYDe75w.jpeg" alt="img">
+    </section>
+    <section id="three">
+        <h1 class="title">Ряды и колонны в гридах</h2>
+            <pre style="width: 600px;">.container {
+ display: <span style=" margin-bottom:10px;color: #f55442; background: rgba(0,0,0,.1); border-radius: 10px; padding: 5px;">grid;</span>
+<span  class="jsClick" >grid-template-columns:<div class="hover" onclick="gridColumnFr()">2fr 1fr 1fr</div>|| <div class="hover" onclick="gridColumnFrPx()">2fr 1fr 200px</div> || <div class="hover" onclick="gridColumnTwoFr()">1fr 1fr</div>  </span>
+<span  class="jsClick" >grid-template-rows: <div class="hover" onclick="gridRowsPx()">100px 200px</div> </span>
+<span  class="jsClick" >grid-auto-rows: <div class="hover" onclick="gridAutoRows()">90px</div> </span>
+<span  class="jsClick" >grid-gap:<div class="hover" onclick="gridGap()">10px</div> </span>
+}
+            </pre>
+        <div class="example example-three">
+            <div class="grid-elem">1</div>
+            <div class="grid-elem">2</div>
+            <div class="grid-elem">3</div>
+            <div class="grid-elem">4</div>
+            <div class="grid-elem">5</div>
+            <div class="grid-elem">6</div>
+
+        </div>
+
+    </section>
+    <script src="js/js.js"></script>
+</body>
+</html>

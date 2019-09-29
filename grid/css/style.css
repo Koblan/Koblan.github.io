@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.first{
+   height: 100vh;
+   background: url(https://fotooboi.biz/img/gallery/30/thumbs/thumb_l_nus_10172.jpg);
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.first__grid{
+    height: 500px;
+    width: 500px;
+    background-color: #000;
+    border-radius: 100%;
+    display:grid;
+    justify-items: center;
+    box-sizing: border-box;
+    padding-top: 150px;
+    grid-template-rows: 150px 100px;
+}
+section{
+    padding: 0 10% 0 10%;
+}
+.first__grid-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size:50px;
+    font-weight: 900;
+}
+.first__grid-sometext{
+    position: absolute;
+    font-size:70px;
+    font-weight: 900;
+    color: pink;
+    top: 100px;
+    right: 150px;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+.first__grid-sometext:hover{
+    transform: rotate(20deg);
+}
+.first__grid-title-span{
+    text-transform:initial;
+    display: inline;
+}
+.first__grid-title-span a {
+    text-decoration: none;
+    color: pink;
+
+}
+.one-red{
+    background: red;
+    grid-area: one-red;
+
+}
+.yellow{
+    background: yellow;
+    grid-area:yellow;
+}
+.red {
+    background: red;
+    grid-area: red;
+}
+.one-green{
+    background: green;
+    grid-area: one-green;
+}
+.two-green{
+    background: green;
+    grid-area: two-green;
+}
+.first__grid-img{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "one-red yellow"
+    "red one-green"
+    "red two-green";
+    grid-gap: 10px;
+    height: 100px;
+    width: 200px;
+}
+.first__grid-img div {
+    padding: 10px;
+    border-radius: 5px;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+pre {
+    color: #fff;
+    font-size: 24px;
+    padding: 50px;
+    background: #222;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+li{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.example{
+    margin-top: 50px;
+
+    min-width: 900px;
+    height: 900px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: grid;
+    padding: 10px;
+}
+.grid-elem{
+    border: 2px solid #222;
+    border-radius: 10px;
+    background: black;
+    font-size: 32px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.jsClick{
+    color:#fff; 
+    background: rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+.hover{
+    color: #f55442; 
+    display: inline;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+
+}
+.hover:hover{
+    background: #fff;
+}

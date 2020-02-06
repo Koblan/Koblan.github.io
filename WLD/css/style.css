@@ -42,6 +42,12 @@
 	height: 20px;
 
 }
+.support-first_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
 .header__logo-text2{
 	left: 118px;
 }
